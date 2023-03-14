@@ -69,6 +69,9 @@ p{
 	color: #1779FF;
 }
 a{
+
+    display: block;
+    padding: 10 10 10 10;
     text-decoration: none;
     font-size: min(max(16px, 2vw), 24px);
     line-height: normal;
@@ -82,10 +85,30 @@ main div{
 
 }
 #difficulty a{
-    border: solid #1779FF;
-    margin: .1rem;
+    margin: 1rem auto;
+    text-decoration: none;
+    padding: 25px 20px 25px 20px;
     background-color: #F1F5FB;
-    height: 60px;
-    border-radius: .6rem;
     filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: solid #1779FF;
+    max-width: 700px;
+    width: 100%;
+}
+#reset-button{
+    display: block;
+    margin: 20rem auto;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    max-width: 300px;
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+h2{
+    text-align: center;
+}
+
 }
