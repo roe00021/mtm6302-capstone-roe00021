@@ -71,11 +71,14 @@ p{
 a{
 
     display: block;
-    padding: 10 10 10 10;
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     font-size: min(max(16px, 2vw), 24px);
     line-height: normal;
 	color: #1779FF;
+}
+i{
+    font-size: min(max(24px, 2vw), 60px);
 }
 
 main div{
@@ -84,6 +87,16 @@ main div{
     text-align: center;
 
 }
+.correct{
+    display: block;
+
+}
+.correct p{
+    float: right;
+}
+#correct-text{
+    color: #473B48;
+}
 #difficulty a{
     margin: 1rem auto;
     text-decoration: none;
@@ -91,7 +104,7 @@ main div{
     background-color: #F1F5FB;
     filter: drop-shadow(7px 7px 4px #00000037);
     border-radius: 0.6rem;
-    border: solid #1779FF;
+    border: 3px solid #1779FF;
     max-width: 700px;
     width: 100%;
 }
@@ -105,6 +118,48 @@ main div{
     border-radius: 0.6rem;
     max-width: 300px;
     width: 100%;
+}
+#submit-button{
+    display: block;
+    margin: 20rem auto;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: 3px solid #1779FF;
+    max-width: 300px;
+    width: 100%;
+}
+#grey-check{
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    max-width: 700px;
+    width: 100%;
+}
+#grey-check i{
+    float: left;
+    color: #A2AABB;
+}
+#blue-check{
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: 3px solid #1779FF;
+    max-width: 700px;
+    width: 100%;
+}
+#blue-check i{
+    float: left;
 }
 @media only screen and (min-width: 768px) {
 h2{

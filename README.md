@@ -1,3 +1,20 @@
+Part-3 Report:
+
+I wanted to display as many eliments as possible using HTML and CSS so that the initial work was completed for part 3. 
+
+I didn't run into any major problems. It was mostly trial and error with aligning elements to match the mockup.
+
+I added 20rem margin-top to the extra buttons that arent supposed to be displayed on the initial page.
+
+Resorces used:
+Validator:
+https://validator.w3.org/
+CSS Reset:
+https://meyerweb.com/eric/tools/css/reset/
+Font Awesome:
+https://fontawesome.com/icons/circle-check?s=solid&f=classic
+
+
 Mockup Design Decisions:
 
 The idea behind this mockup is to create something with a minimalist approach to the design. 
