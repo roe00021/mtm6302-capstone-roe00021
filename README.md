@@ -1,3 +1,21 @@
+Part-4 Report:
+
+HTML:
+
+Restructuring my html was necessary in order to reflect my JS. I didn’t really face any challenges as minimal changed and naming conventions were needed. 
+
+CSS:
+
+Minimal changes were required in CSS. I only needed to create a few changes with margins and spacing to reflect the changes from mobile to tablet and desktop view. I didn’t end up needing to use media queries.
+
+JS:
+
+I faced a lot of challenges when it came to completing the project. I was able to fetch the questions with ease.
+
+One of the problems that took the most amount of time to overcome was the all answers being incorrect as the correct answer wasn’t identified. This was resolved with chosenAnswer.
+
+Another issue I had was having the next button present the user with the next set of questions out of the 10 in total. This was resolved with nextButton as I made it so that it would take the currentQuestion and increment it. I added some small features such as showing/hiding the difficulty options and if the user selects next without selecting an answer they are prompted with "Please select an answer before clicking 'Next'."
+
 Part-3 Report:
 
 I wanted to display as many eliments as possible using HTML and CSS so that the initial work was completed for part 3. 

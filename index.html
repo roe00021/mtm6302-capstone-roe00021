@@ -18,45 +18,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <h1>QUIZI•PEDIA</h1>
+  <header>
+<h1>QUIZI•PEDIA</h1>
 </header>
-<main>
-
-  <h2>Select a difficulty</h2>
-
-  <div id="difficulty">
-    <div class="correct">
-      <p id="correctValue">0/2</p>
-      <p id="correct-text">Correct:</p>
+<main id="container">
+  <form>
+    <label for="difficulty" id="difficultytext">Select a difficulty</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <br><br>
+    <button id="start" type="submit">Start Quiz</button>
+    
+  </form>
   
-    </div>
-    <a id="easy" class="main-button" href="" target="_blank">Easy</a>
-
-    <a id="medium" class="main-button" href="" target="_blank">Medium</a>
-
-    <a id="hard" class="main-button" href="" target="_blank">Hard</a>
-  </div>
-  <div>
-    <a id="reset-button" href="" target="_blank">Reset</a>
-  </div>
-
-
-  <div>
-    <a id="submit-button" href="" target="_blank">Submit/Next Button</a>
-  </div>
-  <div>
-    <a id="grey-check" href="" target="_blank"><i class="fa-solid fa-circle-check"></i>Question</a>
-  </div>
-  <div>
-    <a id="blue-check" href="" target="_blank"><i class="fa-solid fa-circle-check"></i>Question Selected</a>
-  </div>
+  <div id="question"></div>
+  <p id="correct">0/10</p>
+  <p id="countertext">Correct:</p>
+  <div id="result"></div>
+  <div id="answers"></div>
+  <div id="reminder"></div>
   
+  <button id="nextbutton">Next</button>
+  <button id="resetbutton">Reset Statistics</button>
 </main>
 
-
-  <!-- boostrap script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="script.js"></script>

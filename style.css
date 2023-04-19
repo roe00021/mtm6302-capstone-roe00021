@@ -51,6 +51,123 @@ table {
 body{
     font-family: 'Oswald', sans-serif;
     margin: 2rem;
+    max-width: 700px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+}
+#container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+h1{
+    font-size: min(max(30px, 6vw), 70px);
+    font-weight: bold;
+    text-align: center;
+	color: #473B48;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: min(max(24px, 3vw), 48px);
+	color: #473B48;
+    margin-bottom: .2rem;
+}
+p{
+    font-size: min(max(16px, 2vw), 24px);
+    line-height: normal;
+	color: #1779FF;
+}
+#result{
+    display: inline;
+    float: left;
+}
+#countertext{
+    display: inline;
+    float: right;
+    color: #473B48;
+}
+#correct{
+    display: inline;
+    float: right;
+}
+#difficultytext{
+    display: block;
+    font-size: min(max(24px, 3vw), 48px);
+	color: #473B48;
+}
+#difficulty{
+    display: block;
+    color: #1779FF;
+    margin: 1rem auto;
+    text-decoration: none;
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: 3px solid #1779FF;
+    max-width: 700px;
+    width: 100%;
+}
+#start{
+    display: block;
+    color: #1779FF;
+    margin: 1rem auto;
+    margin-top: -1rem;
+    text-decoration: none;
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: 3px solid #1779FF;
+    max-width: 700px;
+    width: 100%;
+}
+#answers p{
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    max-width: 700px;
+    width: 100%;
+}
+#answers p:nth-child(1){
+    margin-top: 3rem;
+}
+/* next */
+#nextbutton{
+    color: #1779FF;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 10px 20px 10px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: 3px solid #1779FF;
+    max-width: 300px;
+    width: 100%;
+}
+/* reset button */
+#resetbutton{
+    color: #1779FF;
+    display: block;
+    margin: 4rem auto;
+    margin-bottom: .5rem;
+    padding: 10px 20px 10px 20px;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+}
+/* body{
+    font-family: 'Oswald', sans-serif;
+    margin: 2rem;
 }
 h1{
     font-size: min(max(30px, 6vw), 70px);
@@ -166,4 +283,4 @@ h2{
     text-align: center;
 }
 
-}
+} */
