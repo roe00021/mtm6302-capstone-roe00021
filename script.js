@@ -10,33 +10,30 @@ let correctQuestions = 0;
 let chosenAnswer = false;
 
 // selects html itemx that will be changed
-const form = document.querySelector("form");
+const difficultyButtons = document.querySelector("#buttons");
 const questionText = document.querySelector("#question");
 const answers = document.querySelector("#answers");
 const resultCounter = document.querySelector("#result");
 const reminderText = document.querySelector("#reminder");
 const correctText = document.querySelector("#correct");
-const difficultyText = document.querySelector("#difficultytext");
-const difficultySelector = document.querySelector("#difficulty");
 
-// submit event listener 
-form.addEventListener("submit", (event) => {
-	event.preventDefault();
-	const difficulty = difficultySelector.value;
-	const url = `${API_URL}?apiKey=${API_KEY}&limit=10&difficulty=${difficulty}`;
-	
-	//hide the difficulty selector button
-	difficultyText.style.display = "none";
-	difficultySelector.style.display = "none";
+difficultyButtons.addEventListener("click", (event) =>
+{
+	if (event.target.className === "dbutton")
+	{
+		difficultyButtons.style.display = "none";
 
-    // api request and receives json
-	fetch(url)
+		
+		const url = `${API_URL}?apiKey=${API_KEY}&limit=10&difficulty=${event.target.value}`;
+		
+		fetch(url)
 		.then((response) => response.json())
 		.then((data) => {
 			questions = data;
 			currentQuestion = 0;
 			showQuestion();
-	});
+		});
+	}
 });
 
 // displays the current question and all answers
@@ -49,7 +46,8 @@ function showQuestion() {
 	{
 		if (question.answers[answer])
 		{
-			answers.innerHTML += `<p><input type="radio" name="answer" value="${answer}"> ${question.answers[answer]}</p>`;
+			answers.innerHTML += `<button type="submit" name="answer" value="${answer}"> ${question.answers[answer]}</button>`;
+			// answers.innerHTML += `<p><input type="radio" name="answer" value="${answer}"> ${question.answers[answer]}</p>`;
 		}
 	}
     // clears the result message or correct or incorrect
@@ -97,8 +95,7 @@ nextButton.addEventListener("click", () => {
 		else
         // it will show the difficulty selector
 		{
-			difficultyText.style.display = "inline";
-			difficultySelector.style.display = "inline";
+			difficultyButtons.style.display = "inline";
 		}
 	}
 	else
@@ -124,6 +121,5 @@ resetButton.addEventListener("click", () => {
 	// clears the questions array
 	questions = [];
 	// displays the difficulty selector
-	difficultyText.style.display = "inline";
-	difficultySelector.style.display = "inline";
+	difficultyButtons.style.display = "inline";
 });

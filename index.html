@@ -22,17 +22,13 @@
 <h1>QUIZI•PEDIA</h1>
 </header>
 <main id="container">
-  <form>
-    <label for="difficulty" id="difficultytext">Select a difficulty</label>
-    <select id="difficulty">
-      <option value="easy">Easy</option>
-      <option value="medium">Medium</option>
-      <option value="hard">Hard</option>
-    </select>
-    <br><br>
-    <button id="start" type="submit">Start Quiz</button>
-    
-  </form>
+  
+  <div id = "buttons">
+    <p id="difficultytext" >Difficulty:</p>
+		<button class="dbutton" value="easy">Easy</button>
+		<button class="dbutton" value="medium">Medium</button>
+		<button class="dbutton" value="hard">Hard</button>
+	</div>
   
   <div id="question"></div>
   <p id="correct">0/10</p>

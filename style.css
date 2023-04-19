@@ -59,6 +59,7 @@ body{
     margin-left: 2rem;
     margin-right: 2rem;
 }
+/* adjusts fonts */
 h1{
     font-size: min(max(30px, 6vw), 70px);
     font-weight: bold;
@@ -77,6 +78,7 @@ p{
     line-height: normal;
 	color: #1779FF;
 }
+/* result text placement */
 #result{
     display: inline;
     float: left;
@@ -90,12 +92,13 @@ p{
     display: inline;
     float: right;
 }
+/* difficulty selection text and buttons */
 #difficultytext{
     display: block;
     font-size: min(max(24px, 3vw), 48px);
 	color: #473B48;
 }
-#difficulty{
+.dbutton{
     display: block;
     color: #1779FF;
     margin: 1rem auto;
@@ -108,21 +111,22 @@ p{
     max-width: 700px;
     width: 100%;
 }
-#start{
-    display: block;
-    color: #1779FF;
-    margin: 1rem auto;
-    margin-top: -1rem;
-    text-decoration: none;
-    padding: 25px 20px 25px 20px;
-    background-color: #F1F5FB;
-    filter: drop-shadow(7px 7px 4px #00000037);
-    border-radius: 0.6rem;
-    border: 3px solid #1779FF;
-    max-width: 700px;
-    width: 100%;
-}
+/* answer options */
 #answers p{
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F5FB;
+    background-color: #F1F5FB;
+    filter: drop-shadow(7px 7px 4px #00000037);
+    border-radius: 0.6rem;
+    max-width: 700px;
+    width: 100%;
+}
+#answers button{
+    color: #1779FF;
     display: block;
     margin: 1rem auto;
     text-decoration: none;
@@ -133,6 +137,7 @@ p{
     border-radius: 0.6rem;
     max-width: 700px;
     width: 100%;
+    border: 3px solid #F1F5FB;
 }
 #answers p:nth-child(1){
     margin-top: 3rem;
@@ -165,6 +170,7 @@ p{
     max-width: 300px;
     width: 100%;
 }
+
 /* body{
     font-family: 'Oswald', sans-serif;
     margin: 2rem;
