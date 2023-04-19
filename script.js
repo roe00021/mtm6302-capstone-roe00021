@@ -9,7 +9,7 @@ let correctQuestions = 0;
 // keeps track if the user has selected an answer or not
 let chosenAnswer = false;
 
-// selects html itemx that will be changed
+// selects html items that will be changed
 const difficultyButtons = document.querySelector("#buttons");
 const questionText = document.querySelector("#question");
 const answers = document.querySelector("#answers");
