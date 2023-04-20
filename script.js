@@ -46,8 +46,8 @@ function showQuestion() {
 	{
 		if (question.answers[answer])
 		{
-			answers.innerHTML += `<button type="submit" name="answer" value="${answer}"> ${question.answers[answer]}</button>`;
-			// answers.innerHTML += `<p><input type="radio" name="answer" value="${answer}"> ${question.answers[answer]}</p>`;
+			// answers.innerHTML += `<button onclick="answers()" type="submit" name="answer" value="${answer}"> ${question.answers[answer]}</button>`;
+			answers.innerHTML += `<p><input type="radio" name="answer" value="${answer}"> ${question.answers[answer]}</p>`;
 		}
 	}
     // clears the result message or correct or incorrect
